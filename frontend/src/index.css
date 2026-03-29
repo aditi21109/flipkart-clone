@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  body { font-family: 'Roboto', sans-serif; background: #f1f3f6; }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-flipblue text-white font-semibold px-6 py-2 rounded hover:bg-blue-700 transition-colors cursor-pointer;
+  }
+  .btn-orange {
+    @apply bg-fliporange text-white font-bold px-6 py-3 rounded hover:bg-orange-600 transition-colors cursor-pointer;
+  }
+  .btn-yellow {
+    @apply bg-flipyellow text-white font-bold px-6 py-3 rounded hover:bg-yellow-500 transition-colors cursor-pointer;
+  }
+  .card {
+    @apply bg-white rounded shadow-sm border border-gray-100;
+  }
+}
